@@ -1,0 +1,23 @@
+
+
+Processo de criação da Chave SSH
+
+1) Criar a chave ssh
+
+	> ssh-keygen -t ed25519 -C fcalpimentel@hotmail.com
+
+2) Copiar a chave
+
+	> cd ~/.shh
+	> cat id_ed25519.pub
+
+3) Criar a a chave no Git e Copiar o conteúdo do arquivo anterior
+
+
+4) Adicionar o processo de SSH 
+
+	> eveal $(ssh-agent -s)
+
+5) Anexar a chave criada
+
+	> ssh-add id_ed25519.pub
